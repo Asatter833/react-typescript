@@ -1,6 +1,9 @@
 import "./App.css";
+import Heading from "./components/Heading";
+import { Oscar } from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -21,6 +24,11 @@ function App() {
       <Welcome name="Abdus Satter" workCount={10} isLogged={true} />
       <Person data={personData} />
       <PersonList list={contactList} />
+      <Status status="loading" />
+      <Heading>PlaceHolder Text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to school everyday!</Heading>
+      </Oscar>
     </div>
   );
 }

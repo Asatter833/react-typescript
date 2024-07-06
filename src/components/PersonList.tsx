@@ -1,12 +1,12 @@
 import React from "react";
 
-type contactListProps = {
+type ContactListProps = {
   list: {
     name: string;
     age: number;
   }[];
 };
-const PersonList = (props: contactListProps) => {
+const PersonList = (props: ContactListProps) => {
   return (
     <div>
       <p className="font-semibold text-lg">My Contact List</p>
